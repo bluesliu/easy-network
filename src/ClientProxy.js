@@ -36,6 +36,10 @@ class ClientProxy extends EventDispatcher {
         this.socket.destroy()
         this.socket = null
     }
+
+    address () {
+        return this.socket.address()
+    }
 }
 
 module.exports = ClientProxy
